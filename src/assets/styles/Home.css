@@ -1,0 +1,23 @@
+.homeWrapper {
+  background-image: url('../images/background-home-desktop.jpg');
+}
+.homeWrapper .mainWrapper {
+  /* width: 100%; */
+  /* height: 100%; */
+}
+section.right div {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  background: var(--font-title);
+  color: var(--font-sec);
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+}
