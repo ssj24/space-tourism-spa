@@ -51,6 +51,7 @@
 .mainNav li:hover {
   cursor: pointer;
   border-bottom: 5px solid white;
+  font-weight: 900;
   color: var(--font-pri);
 }
 .mainNav li.selected {

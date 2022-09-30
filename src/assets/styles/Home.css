@@ -1,10 +1,7 @@
 .homeWrapper {
   background-image: url('../images/background-home-desktop.jpg');
 }
-.homeWrapper .mainWrapper {
-  /* width: 100%; */
-  /* height: 100%; */
-}
+
 section.right div {
   display: block;
   width: 200px;
@@ -20,4 +17,5 @@ section.right div {
   position: absolute;
   bottom: 0;
   right: 300px;
+  cursor: pointer;
 }

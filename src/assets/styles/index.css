@@ -27,6 +27,13 @@ ul {
   list-style: none;
 }
 
+li {
+  width: 100%;
+}
+li:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: "Barlow", serif;

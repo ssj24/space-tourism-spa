@@ -14,15 +14,26 @@ class Destination extends Component {
     time: "",
     dests: ["Moon", "Mars", "Europa", "Titan"]
   };
+  changeImage = (newData) => {
+    let imgSection = document.querySelector(".left");
+    imgSection.innerHTML = "";
+    let image = document.createElement("img");
+    image.src = process.env.PUBLIC_URL + newData.images.png;
+    image.alt = newData.name;
+    image.classList = "animate__animated animate__zoomInDown";
+    imgSection.appendChild(image);
+  }
   handleData = (type, idx) => {
-    this.setState({category: data[type][idx]}, () => {
+    let newData = data[type][idx];
+    this.setState({category: newData}, () => {
       this.setState({
         pic: this.state.category.images.png,
         description: this.state.category.description,
         title: this.state.category.name,
         distance: this.state.category.distance,
         time: this.state.category.travel
-      })
+      });
+      this.changeImage(newData);
     })
   }
 
@@ -31,13 +42,12 @@ class Destination extends Component {
   }
 
   render() {
-    let { pic, title, description, distance, time } = this.state;
+    let { title, description, distance, time } = this.state;
     return (
       <div className="wrapper destWrapper">
         <h2>01 Pick your destination</h2>
         <section className="mainWrapper">
           <section className="left">
-            <img className="animate__animated animate__bounceInLeft" src={process.env.PUBLIC_URL + pic} alt={title} />
           </section>
           <section className="right">
             <Nav
