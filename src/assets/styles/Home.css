@@ -1,21 +1,63 @@
 .homeWrapper {
   background-image: url('../images/background-home-desktop.jpg');
 }
+.mainWrapper {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content:space-around;
+}
 
-section.right div {
+.homeWrapper .mainWrapper section {
+  flex: 1;
+}
+.title, h2 {
+  text-transform: uppercase;
+}
+.title {
+  color: var(--font-title);
+  font-family: "Bellefair", serif;
+  font-weight: 100;
+  font-size: 150px;
+}
+h2 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+section.left {
+  padding: 30px;
+}
+
+.homeWrapper .desc {
+  margin-bottom: 50px;
+}
+
+section.right {
+  position: relative;
+}
+
+section.right .btn {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   text-align: center;
-  line-height: 200px;
+  line-height: 250px;
   background: var(--font-title);
   color: var(--font-sec);
   font-family: "Bellefair", serif;
   font-size: 28px;
   text-transform: uppercase;
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  right: 300px;
-  cursor: pointer;
+  right: 100px;
+  z-index: 2;
+  transition: all 0.2s;
+}
+
+section.right .btn:hover {
+  box-shadow: 0 0 0 50px var(--font-gray);
 }

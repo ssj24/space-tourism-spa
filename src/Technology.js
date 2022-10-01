@@ -14,7 +14,7 @@ class Technology extends Component {
   };
 
   changeImage = (newData) => {
-    let imgSection = document.querySelector(".right");
+    let imgSection = document.querySelector(".imageContainer");
     imgSection.innerHTML = "";
     let image = document.createElement("img");
     image.src = process.env.PUBLIC_URL + newData.images.portrait;
@@ -42,19 +42,23 @@ class Technology extends Component {
     let { title, description } = this.state;
     return (
       <div className="wrapper techWrapper">
-        <h2>03 Space launch 101</h2>
-        <section className="left">
-          <Nav
-            type={this.state.type}
-            list={this.state.techList}
-            handleData={this.handleData}
-            navClicked={this.props.navClicked} />
+        <section className="mainWrapper">
+          <h2><span>03 </span>Space launch 101</h2>
+          <div className="sectionWrapper">
+            <Nav
+              type={this.state.type}
+              list={this.state.techList}
+              handleData={this.handleData}
+              navClicked={this.props.navClicked} />
+            <section className="descriptionContainer">
 
-          <h3>The terminology...</h3>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </section>
-        <section className="right">
+              <h3>The terminology...</h3>
+              <h1 className="title">{title}</h1>
+              <p className="desc">{description}</p>
+            </section>
+            <section className="imageContainer">
+            </section>
+          </div>
         </section>
       </div>
     );

@@ -1,39 +1,25 @@
-/* .App {
-  width: 100vw;
-  height: 100vh;
-} */
 .App-main {
   width: 100vw;
   height: 100vh;
 }
 .wrapper {
-  /* padding-top: 150px; */
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.mainWrapper {
-  width: 100%;
   display: flex;
-  justify-content:space-around;
-}
-
-.mainWrapper section {
-  flex: 1;
-}
-.title, h2 {
-  text-transform: uppercase;
-}
-.title {
-  font-family: "Bellefair", serif;
-  font-weight: 100;
-  font-size: 150px;
-}
-h2 {
-  padding-top: 200px;
 }
 
 .App-header {
   position: fixed;
+  z-index: 2;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.descriptionContainer .title {
+  font-size: 100px;
 }

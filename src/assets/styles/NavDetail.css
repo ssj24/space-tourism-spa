@@ -1,13 +1,14 @@
 .navDetail {
-  width: 70%;
   height: 70px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .navDetail li {
   height: 100%;
+  margin-right: 10px;
   text-align: center;
   line-height: 70px;
   font-size: 32px;
@@ -19,9 +20,65 @@
 }
 
 .navDetail li:hover {
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid var(--font-pri);
 }
 
 .navDetail li.selected {
+  border-radius: 15px 15px 0 0;
+  backdrop-filter: contrast(0.8);
   border-bottom: 5px solid white;
+}
+
+/* ----------------------------------------------------- Crew */
+
+.crewWrapper .navDetail li {
+  width: 35px;
+  height: 35px;
+  background-color: var(--font-gray);
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.7s;
+}
+
+.crewWrapper .navDetail li:hover {
+  transform: scale(1.1);
+  border-bottom: none;
+  background-color: var(--font-title);
+}
+
+.crewWrapper .navDetail li.selected{
+  border: none;
+  border-radius: 50%;
+  backdrop-filter:unset;
+  background-color: var(--font-title);
+}
+
+/* ----------------------------------------------------- Tech */
+
+.techWrapper .navDetail {
+  width: 70px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.techWrapper .navDetail li {
+  width: 65px;
+  height: 65px;
+  background-color: var(--font-gray);
+  border: 2px solid var(--font-title);
+  text-align: center;
+  line-height: 65px;
+  border-radius: 50%;
+  transition: background-color 0.7s;
+}
+
+.techWrapper .navDetail li:hover {
+  background-color: var(--font-title);
+  color: var(--font-sec);
+}
+
+.techWrapper .navDetail li.selected{
+  background-color: var(--font-title);
+  color: var(--font-sec);
 }

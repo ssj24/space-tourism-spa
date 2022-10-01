@@ -1,3 +1,27 @@
 .crewWrapper {
   background-image: url("../images/background-crew-desktop.jpg");
 }
+
+.crewWrapper .mainWrapper {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.crewWrapper .descriptionContainer .subTitle {
+  margin-top: 20%;
+  margin-bottom: 20px;
+}
+.crewWrapper .mainWrapper .title {
+  font-size: 50px;
+}
+
+.crewWrapper .mainWrapper .desc {
+  border: none;
+}
+
+.crewWrapper .imageContainer {
+  padding-left: 120px;
+}
+.crewWrapper img {
+  height: 600px;
+}

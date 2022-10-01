@@ -23,10 +23,14 @@ class Home extends Component {
             </p>
           </section>
           <section className="right">
-              <div onClick={(e) => {
+            <div
+              className="btn"
+              onClick={(e) => {
                 this.props.navChange(1)
                 this.handleNav()
-              }}>Explore</div>
+            }}>
+              Explore
+            </div>
           </section>
         </section>
       </div>

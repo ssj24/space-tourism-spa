@@ -15,7 +15,7 @@ class Destination extends Component {
     dests: ["Moon", "Mars", "Europa", "Titan"]
   };
   changeImage = (newData) => {
-    let imgSection = document.querySelector(".left");
+    let imgSection = document.querySelector(".imageContainer");
     imgSection.innerHTML = "";
     let image = document.createElement("img");
     image.src = process.env.PUBLIC_URL + newData.images.png;
@@ -45,30 +45,32 @@ class Destination extends Component {
     let { title, description, distance, time } = this.state;
     return (
       <div className="wrapper destWrapper">
-        <h2>01 Pick your destination</h2>
         <section className="mainWrapper">
-          <section className="left">
-          </section>
-          <section className="right">
-            <Nav
-              type={this.state.type}
-              list={this.state.dests}
-              handleData={this.handleData}
-              navClicked={this.props.navClicked} />
-            <h1>{title}</h1>
-            <p>
-              {description}
-            </p>
-            <span className="subCategory">
-              <p>Avg. distance</p>
-              <p>{distance}</p>
-            </span>
-            <span className="subCategory">
-              <p>Est. travel time</p>
-              <p>{time}</p>
-            </span>
+          <h2><span>01 </span>Pick your destination</h2>
+          <div className="sectionWrapper">
+            <section className="imageContainer">
+            </section>
+            <section className="descriptionContainer">
+              <Nav
+                type={this.state.type}
+                list={this.state.dests}
+                handleData={this.handleData}
+                navClicked={this.props.navClicked} />
+              <h1 className="title">{title}</h1>
+              <p className="desc">
+                {description}
+              </p>
+              <span className="subCategory">
+                <p className="subTitle">Avg. distance</p>
+                <p>{distance}</p>
+              </span>
+              <span className="subCategory">
+                <p className="subTitle">Est. travel time</p>
+                <p>{time}</p>
+              </span>
 
-          </section>
+            </section>
+          </div>
         </section>
 
       </div>

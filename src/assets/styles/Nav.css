@@ -29,7 +29,7 @@
   position: absolute;
   top: 50%;
   left: -60%;
-  border: 1px solid rgba(255, 255, 255, 0.57);
+  border: 1px solid var(--font-gray);
 }
 
 .mainNav li {
@@ -41,6 +41,7 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 3px;
+  border-bottom: 5px solid transparent;
 }
 .mainNav li span {
   color: var(--font-title);

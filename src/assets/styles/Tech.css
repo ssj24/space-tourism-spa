@@ -1,3 +1,19 @@
 .techWrapper {
   background-image: url("../images/background-technology-desktop.jpg");
 }
+
+.techWrapper .mainWrapper {
+  flex-direction: column;
+}
+.techWrapper .descriptionContainer {
+  padding: 30px;
+}
+.techWrapper h3 {
+  font-size: 18px;
+}
+.techWrapper .mainWrapper .title {
+  font-size: 72px;
+}
+.techWrapper .mainWrapper .desc {
+  border: none;
+}

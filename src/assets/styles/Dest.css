@@ -1,9 +1,42 @@
 .destWrapper {
   background-image: url("../images/background-destination-desktop.jpg");
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
-.destWrapper p {
-  color: var(--font-pri);
+.destWrapper .mainWrapper {
+  flex-direction: column;
+}
+.destWrapper h2 { 
+  padding-top: 120px;
+}
+
+h2 span {
+  color: var(--font-gray);
+  margin-right: 20px;
+}
+
+.mainWrapper .sectionWrapper {
+  display: flex;
+}
+.sectionWrapper section {
+  flex: 1;
+}
+
+.sectionWrapper .desc {
+  height: 150px;
+  border-bottom: 1px solid var(--font-gray);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.subCategory {
+  width: 50%;
+  display: inline-block;
+}
+.subTitle {
+  text-transform: uppercase;
+}
+.subCategory p:not(.subTitle) {
+  margin-top: 10px;
+  font-size: 36px;
+  font-family: "Bellefair", serif;
+  color: var(--font-title);
 }
