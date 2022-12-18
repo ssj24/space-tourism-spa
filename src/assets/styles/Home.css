@@ -61,3 +61,53 @@ section.right .btn {
 section.right .btn:hover {
   box-shadow: 0 0 0 50px var(--font-gray);
 }
+
+/* ------------------------------------------------------------------- media */
+@media (min-width: 319px) {
+  .title {
+    font-size: 50px;
+  }
+  section.right .btn {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 22px;
+    bottom: 50px;
+    right: 50px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+  
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .title {
+    font-size: 150px;
+  }
+  section.right .btn {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    font-size: 28px;
+    bottom: 0;
+    right: 100px;
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  
+}

@@ -20,6 +20,7 @@ class Nav extends Component {
     return (
       <div className="navWrapper">
         <div className="logo"></div>
+        <div className="line"></div>
         <ul className="mainNav">
           {this.list}
         </ul>

@@ -40,3 +40,64 @@ h2 span {
   font-family: "Bellefair", serif;
   color: var(--font-title);
 }
+
+/* ------------------------------------------------------------------- media */
+@media (min-width: 319px) {
+  .destWrapper img {
+    width: 80%;
+    height: 100%;
+  }
+  .sectionWrapper .desc {
+    font-size: 18px;
+    height: 130px;
+    border-bottom: 1px solid var(--font-gray);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .subTitle {
+    font-size: 18px;
+  }
+  .subCategory p:not(.subTitle) {
+    font-size: 24px;
+  }
+}
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .destWrapper img {
+    width: 80%;
+    height: 100%;
+  }
+  .sectionWrapper .desc {
+    font-size: 18px;
+    height: 130px;
+    border-bottom: 1px solid var(--font-gray);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .subTitle {
+    font-size: 18px;
+  }
+  .subCategory p:not(.subTitle) {
+    font-size: 24px;
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  
+}
