@@ -59,6 +59,10 @@ section.right .btn {
 }
 
 section.right .btn:hover {
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black;
+  color:white;
+  background-color: var(--font-gray);
   box-shadow: 0 0 0 50px var(--font-gray);
 }
 
